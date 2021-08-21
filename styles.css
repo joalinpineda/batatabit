@@ -135,13 +135,25 @@ main{
     line-height: 1.6rem;
     color: #757575;
 }
-.main-currency-table{
+.main-tables-cointainer{
+    display: flex;
+    overflow-x: scroll;
+    overscroll-behavior-x: contain;
+    scroll-snap-type: x proximity;
+}
+.main-currency-table .main-commissions-table{
     width: 70%;
     min-width: 235px;
     max-width: 500px;
     height: 370px;
-    margin: 0 auto;
+    margin: 0 auto; 
     font-family: 'Inter', sans-serif;
+}
+.main-currency-table{
+    margin: 0 50px 0;
+}
+.main-commissions-table{
+    margin: 0 50px 0;
 }
 .main-currency-table .currency-table--title{
     margin-bottom: 15px;
